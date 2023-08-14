@@ -1,0 +1,55 @@
+:root {
+	/* EXAMPLE : color: var(--color-white); */
+   --font-size-xx: 7.5rem;
+   --color-brand: #55EED0; 	
+   --color-pinke: #ED6EA6; 	
+   --color-dark: #2e2e31;
+   --color-dark: #2e2e31;
+   --color-gray: #f0f0f0;
+   --color-bluegray: #44475a;
+   --color-blueblack: #282a36;
+   --color-white: #fff;
+   --color-blue: #6272a4;
+   --color-dark-blue: #144c90;
+   --color-red: #ff5555;
+   --color-dark-red: #a22929;
+   --color-yellow: #ffea64;
+   --color-dark-yellow: #fddd50;
+   --color-peach: #fc9;
+   --font-family-xx: 'Rubik', sans-serif;
+	 /*--overlay-color: rgba(24, 39, 51 , 0.85);*/
+   --overlay-color: rgba(45, 45, 45, 0.85);
+   --menu-speed: 0.75s;
+
+}
+
+/* ### BODY OPTIONS ### */
+
+body{  font-family: 'Poppins', sans-serif !important;}
+
+.bg-dark {
+	background-color: var(--color-dark);
+}	
+.bg-brand {
+	background-color: var(--color-brand);
+}	
+.bg-img {
+	background-image: url('../img/dan.jpg');
+	background-repeat:no-repeat;
+	background-size: cover;
+	background-attachment: fixed;
+	background-position: center;
+}
+
+/* COLOR OVERLAY */
+.bg-img::after {
+    content: "";
+    /*background: rgba(237, 110, 166, 0.4);*/
+	background: rgba(45, 45, 45, 0.9);
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: -9980;
+}
