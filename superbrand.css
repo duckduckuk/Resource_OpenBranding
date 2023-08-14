@@ -1,0 +1,28 @@
+Brand Template for CSS
+
+/* SUPERBRAND */
+:root {
+	/* EXAMPLE : color: var(--color-white); */
+   --color-brand: #ffea64; 	
+   --color-secondary: #ED6EA6; 	
+   --color-overlay: rgba(24, 39, 51 , 0.85);	
+   --color-dark: #2e2e31;
+   --color-gray: #f0f0f0;
+   --color-bluegray: #44475a;
+   --color-blueblack: #282a36;
+   --color-white: #fff;
+   --color-blue: #6272a4;
+   --color-dark-blue: #144c90;
+   --color-red: #ff5555;
+   --color-dark-red: #a22929;
+   --color-green: #5bc8af; 
+   --color-yellow: #ffea64;
+   --color-dark-yellow: #fddd50;
+   --color-peach: #fc9;
+   /* -- */
+   --overlay-2: rgba(45, 45, 45, 0.85);
+   --menu-speed: 0.75s;
+   --font-family-xx: 'Rubik', sans-serif;
+   --font-size-xx: 7.5rem;
+}
+/* END SUPERBRAND */
