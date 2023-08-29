@@ -6,7 +6,7 @@
 :root {
   /* EXAMPLE : color: var(--color-white); */
   --color-brand: #ee4e34;
-  --color-secondary: #fce77d;
+  --color-secondary: #53a57d;
   --color-overlay-1: rgba(24, 39, 51, 0.8);
   --color-overlay-2: rgba(45, 45, 45, 0.6);
   --color-dark: #2e2e31;
@@ -26,10 +26,13 @@
   --color-blue-accent: #6272a4;
   --color-blue-dark: #144c90;
   --color-green: #5bc8af;
+  --color-green-shade: #53a57d;
   --color-yellow: #fddd50;
   --color-yellow-highlight: #ffea64;
   --color-yellow-accent: #ffb86c;
   --color-yellow-dark: #ffb700;
+  --color-yellow-shade: #E3B448
+  --color-orange: #ee4e34;
   --color-brown: #432800;
   --color-pinke: #ed6ea6;
   --color-pink-highlight: #fbeaeb;
