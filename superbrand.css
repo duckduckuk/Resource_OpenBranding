@@ -1,28 +1,125 @@
-Brand Template for CSS
+/* *************************************************** */
+/* DuckDuck/Pinke Universal Rule Set for CSS3          */
+/* *************************************************** */
 
 /* SUPERBRAND */
 :root {
-	/* EXAMPLE : color: var(--color-white); */
-   --color-brand: #ffea64; 	
-   --color-secondary: #ED6EA6; 	
-   --color-overlay: rgba(24, 39, 51 , 0.85);	
-   --color-dark: #2e2e31;
-   --color-gray: #f0f0f0;
-   --color-bluegray: #44475a;
-   --color-blueblack: #282a36;
-   --color-white: #fff;
-   --color-blue: #6272a4;
-   --color-dark-blue: #144c90;
-   --color-red: #ff5555;
-   --color-dark-red: #a22929;
-   --color-green: #5bc8af; 
-   --color-yellow: #ffea64;
-   --color-dark-yellow: #fddd50;
-   --color-peach: #fc9;
-   /* -- */
-   --overlay-2: rgba(45, 45, 45, 0.85);
-   --menu-speed: 0.75s;
-   --font-family-xx: 'Rubik', sans-serif;
-   --font-size-xx: 7.5rem;
+  /* EXAMPLE : color: var(--color-white); */
+  --color-brand: #ee4e34;
+  --color-secondary: #fce77d;
+  --color-overlay-1: rgba(24, 39, 51, 0.8);
+  --color-overlay-2: rgba(45, 45, 45, 0.6);
+  --color-dark: #2e2e31;
+  --color-light: #f0f0f0;
+  --color-highlight: rgba(237, 110, 166, 0.4);
+  --color-white: #f7f7f9;
+  --color-black: #222;
+  --color-lightgrey: #aebcb9;
+  --color-darkgrey: #292826;
+  --color-bluegrey1: #44475a;
+  --color-bluegrey2: #282a36;
+  --color-red: #ff5555;
+  --color-red-highlight: #f47174;
+  --color-red-dark: #a22929;
+  --color-blue: #4169e1;
+  --color-blue-highlight: #4682b4;
+  --color-blue-accent: #6272a4;
+  --color-blue-dark: #144c90;
+  --color-green: #5bc8af;
+  --color-yellow: #fddd50;
+  --color-yellow-highlight: #ffea64;
+  --color-yellow-accent: #ffb86c;
+  --color-yellow-dark: #ffb700;
+  --color-brown: #432800;
+  --color-pinke: #ed6ea6;
+  --color-pink-highlight: #fbeaeb;
+  --color-pinke-shade: #df678c;
+  /* -- */
+  --menu-speed: 0.75s;
+  --font-family-xx: "Rubik", sans-serif;
+  --font-size-xx: 7.5rem;
+  /* -- */
+}
+/* Core */
+body {
+  font-family: "Poppins", sans-serif !important;
+}
+user agent stylesheet a:-webkit-any-link {
+  color: -webkit-link;
+  cursor: pointer;
+}
+/* Text */
+.text-brand {
+  color: var(--color-brand);
+}
+.text-secondary {
+  color: var(--color-secondary);
+}
+/* Links */
+.link {
+  opacity: 0.8;
+  transition: all 0.3s ease-out;
+  cursor: pointer;
+  position: relative;
+  padding-bottom: 2px;
+}
+.link::before {
+  content: "";
+  position: absolute;
+  display: block;
+  width: 100%;
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  background-color: var(--color-brand);
+  transform: scaleX(0);
+  transition: transform 0.3s ease;
+}
+.link:hover::before {
+  transform: scaleX(1);
+}
+.link:hover {
+  opacity: 1;
+  transition: all 0.3s ease-out;
+}
+/* Backgrounds */
+.bg-brand {
+  background-color: var(--color-brand);
+}
+.bg-secondary {
+  background-color: var(--color-secondary);
+}
+.hover {
+  transition: all 0.3s ease-out;
+  cursor: pointer;
+}
+.hover:hover {
+  transition: all 0.3s ease-out;
+}
+.bg-hover-brand:hover {
+  background-color: var(--color-brand);
+  transition: 0.3s;
+}
+.bg-hover-secondary:hover {
+  background-color: var(--color-secondary);
+  transition: 0.3s;
+}
+.bg-dark {
+  background-color: var(--color-dark);
+}
+.bg-light {
+  background-color: var(--color-light);
+}
+.bg-white {
+  background-color: var(--color-white);
+}
+.bg-black {
+  background-color: var(--color-black);
+}
+.bg-darkgrey {
+  background-color: var(--color-darkgrey);
+}
+.border-brand {
+  border-color: var(--color-brand);
 }
 /* END SUPERBRAND */
